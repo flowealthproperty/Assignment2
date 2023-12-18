@@ -1,0 +1,51 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+   
+}
+h1{
+    text-align: center;
+    color: red;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+   margin: 0 550px;
+  
+}
+br{
+    margin-top: 55px;
+}
+input[type="submit"]{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: red;
+    color: #f4f4f4;
+}
+#orderSummary{
+  
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.bodered{
+    border: 1px solid gray;
+    width: 100%;
+    padding:10px;
+}
+.reds{
+    color: red;
+}
+input{
+    padding: 10px;
+}
+select{
+    padding: 10px;
+    outline: none;
+}

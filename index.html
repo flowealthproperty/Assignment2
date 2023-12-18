@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Order Form</title>
+  <script src="pizzaOrder.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Pizza Order Form</h1>
+  <form id="pizzaForm" onsubmit="submitPizzaOrder(event)">
+    <label for="size">Size:</label>
+    <select id="size" name="size">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select><br>
+    <label for="toppings">Toppings:</label>
+    <input type="text" id="toppings" name="toppings"><br>
+    <label for="crust">Crust:</label>
+    <select id="crust" name="crust">
+      <option value="thin">Thin Crust</option>
+      <option value="thick">Thick Crust</option>
+    </select><br>
+    <label for="payment">Payment Method:</label>
+    <input type="radio" id="credit" name="payment" value="credit">
+    <label for="credit">Credit Card</label>
+    <input type="radio" id="cash" name="payment" value="cash">
+    <label for="cash">Cash</label><br>
+    <input type="submit" value="Place Order">
+  </form>
+  <div id="orderSummary"></div>
+</body>
+</html>
